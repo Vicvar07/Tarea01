@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header,footer,
+article,section,
+nav,figure{
+    display: block;
+}
+
+body{
+    /*  Estilos por default para color de texto, tamaño, color de fonto */
+    font-size: 1em;
+    color: black;
+    background-color: bisque;
+    font-family: serif;
+}
+/*cabecera: */
+h1,h2,h3{
+    /* Agregamos una sombra al texto a los h1, h2, h3 */
+    text-shadow: 0 1px 1px blueviolet;
+}
+
+h2{
+    font-size: 2sem;
+    font-weight: normal;
+    letter-spacing: 0 01em;
+    text-transform:uppercase;  
+}
+
+h3{
+    font-size:1.5em;
+    font-weight:normal;
+    margin:0 0 1em;
+}
+
+/* parrafo*/
+
+p{
+    line-height:1.5em; /* interlineado*/
+    padding: bottom 1em;
+    padding: left 1em;
+}
+
+.line{
+    /* linea divisora*/
+    height: 1px;
+    margin:1em 0;
+    overflow:hidden;
+}
+
+article .line{
+    /* linea divisora dentro de los articulos*/
+    background-color:rgb(238, 48, 86);
+}
+
+.logo{
+    padding:30px 25px 25px;
+}
+
+/* Hipervinculos*/
+
+a, a:visited {
+    /* Para quitar el subrayado al hipervinculo*/
+    text-decoration: none;
+}
+
+/*Menu*/
+nav{
+    background:rgb(167, 232, 189);
+    position: absolute;
+    right: 0;
+    top:4em ;
+}
+
+nav ul li{
+    /* Para que el menu se muestre de dorma horizontal*/
+    display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+    color: darkorchid;
+    display:block;
+    float: left;
+    font-size:  1.25em; 
+    font-weight:bold;
+    margin:5px 2px;
+    padding:7px 10px 4px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    background-color: cornflowerblue;
+}
+
+nav, article, nav ul li a, figure{
+    /* Bordes redondeados: */
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+border-radius:10px;
+}
+
+/* Articulos */
+
+#page{
+    width:960px;
+    margin:0% auto;
+    position: relative; 
+}
+
+article{
+    background-color: tomato;
+    margin:3em 0;
+    padding:20px;
+    text-shadow:0 2px 2 black;
+}
+
+/* Para mostrar un espacio despues de cada article */
+
+.clear:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Figure e imagen */
+
+figure{
+    float: right;
+    margin-left:15px;
+    overflow: hidden;
+}
+
+figure img{
+    margin-left:-60px; 
+}
+
+/* Footer */
+
+footer{
+    margin-bottom:30px;
+    text-align: center;
+    font-size:0.825em;
+}
+
+footer p{
+    background-color:darkgrey;
+    padding: 30px;
+    /* Bordes redondeados */
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+}
+
+
